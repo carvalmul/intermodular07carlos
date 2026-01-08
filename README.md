@@ -19,4 +19,4 @@ Lloc web senzill amb dues pàgines HTML i imatges.
 
 ## ✨ Autor
 
-**Carlos Valls Mulet – 1r DAW**
+**Carlos Valls Mulet - 1r DAW**
