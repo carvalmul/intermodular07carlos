@@ -10,16 +10,17 @@ on:
       - main
 
 jobs:
-  desplegar:
+  Desplegar:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v6
+      - name: Checkout del repositorio
+        uses: actions/checkout@v6
 
       - name: Instal·lar Vercel CLI
         run: npm install --global vercel@latest
 
-      - name: Descarrega informació de l’entorn de Vercel
+      - name: Descarrega Informació de l'entorn de Vercel
         run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
 
       - name: Fer el build
